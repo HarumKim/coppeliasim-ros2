@@ -15,10 +15,12 @@ High-level motion commands are sent using Twist messages, where:
 
 A dedicated command topic controls the head joint angle independently, enabling directional stability during movement.
 
-###⏱️ Patterned Motion Execution
+
+### ⏱️ Patterned Motion Execution
 
 A command node sends timed movement patterns, causing the robot to move forward for a fixed duration and then stop autonomously.
 
-###🔗 ROS 2 – CoppeliaSim Integration
+
+### 🔗 ROS 2 – CoppeliaSim Integration
 
 The system uses the CoppeliaSim ZMQ Remote API to directly command joint positions while publishing joint states through ROS for real-time feedback.
